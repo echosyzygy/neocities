@@ -1,37 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>echo syzygy [offical site]</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="./glitch.css" rel="stylesheet" type="text/css" media="all">
-
-    <!-- style lifted from http://lainzine.neocities.org/ -->
-  </head>
-  <body>
-    <!-- <audio src="/wires.ogg" autoplay loop></audio> -->
-    <!--h1 style="padding-top: 3rem;">echo syzygy</h1> -->
-    <div id="container">
-    <h1>echo syzygy</h1>
-    <h1>echo syzygy</h1>
-    <h1>echo syzygy</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>echo.syzygy</title>
+    <style>
+        body {
+            /* Black background with image overlay */
+            background-color: white;       /* Black background */
+            background-image: url('./art/background-drawing-1.jpg');
+            
+            /* Updated: Fit the entire image within the viewport */
+            background-size: contain;      /* Shows entire image, may leave empty space */
+            background-position: center;   /* Centers the image */
+            background-repeat: no-repeat; /* Prevents image from repeating */
+            background-attachment: fixed; /* Image stays in place when scrolling */
+            
+            /* Add some styling to make text readable over the image */
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Ensures body takes full viewport height */
+            width: 100vw; /* Ensures body takes full viewport width */
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+        
+        /* Optional: Add a semi-transparent overlay for better text readability */
+        .content {
+            background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        
+        /* Remove underlines from all links and set color to white */
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        /* Position footer at bottom of page */
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent black overlay */
+        }
+        
+        footer {
+            margin-top: auto;
+        }
+        
+        /* Use Calibri font for the main heading */
+        h1[data-text="echo.syzygy"] {
+            font-family: Calibri, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <h1 data-text="echo.syzygy">echo.syzygy</h1>
+            <nav>
+                <a href="./books.html" class="nav-link">BOOKS</a>
+                <a href="http://jrs1972.blogspot.com" class="nav-link" target="_blank">POETRY</a>
+                <a href="http://thezenfulbohemian.blogspot.com/2014/" class="nav-link" target="_blank">ART</a>
+                <a href="https://soundcloud.com/echo-syzygy" class="nav-link" target="_blank">MUSIC</a>
+                <a href="./zines.html" class="nav-link">ZINES</a>
+                <a href="./about.html" class="nav-link">ABOUT</a>
+            </nav>
+        </header>
+        <footer>
+            <p>&copy; 2025 echo.syzygy </p>
+        </footer>
     </div>
-    <p class="abar">
-      <a href="./about.html">About</a> • 
-      <a href="./books.html">Books</a> • 
-      <a href="http://www.example.com/">Art</a> • 
-      <a href="http://www.example.com/">Photos</a> •
-      <a href="http://www.example.com/">null</a> •
-      <a href="http://www.example.com/">null</a>
-    </p>
-    <div class="zine-images">
-      <div class="zine-image"><a href="https://www.amazon.com/forks-under-water-echo-syzygy/dp/1983855529/ref=sr_1_1?ie=UTF8&qid=1536384001&sr=8-1" target="_blank"><img alt="2 forks under water" src="./img/2-forks-under-water-thumb.jpg"></a></div>
-      <div class="zine-image"><a href="https://www.amazon.com/Spider-Angel-echo-syzygy-ebook/dp/B00GJCWZ56" target="_blank"><img alt="spider and the angel" src="./img/spider-and-the-angel-thumb.jpg"></a></div>
-      <div class="zine-image"><a href="https://www.amazon.com/Rathskellar-echo-syzygy/dp/1468092049/ref=sr_1_3?ie=UTF8&qid=1327036462&sr=8-3" target="_blank"><img alt="rathskellar" src="./img/rathskellar-thumb.jpg"></a></div>
-    </div>
-    <p class="fade">
-      <span>copyright(c)</span>
-      <span>2018</span>
-    </p>
-  </body>
+</body>
 </html>

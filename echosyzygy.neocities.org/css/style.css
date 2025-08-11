@@ -1,0 +1,107 @@
+body {
+  background-color: #111;
+  background-image: url(./img/lines-alpha-anim.gif);
+  background-size: 8px;
+  color: rgb(100, 255, 255);
+  font-family: "Times New Roman", "Courier New", "Lucida Console", monospace;
+  animation: fade-in 2s;
+  /*text-shadow: -0.06em 0 0.5px rgba(255, 200, 100, 0.9);*/
+}
+
+a:visited, a:link, a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  text-shadow: 0.06em 0 0.5px rgba(200, 200, 0, 0.5);
+}
+
+a:hover {
+  color: rgb(85, 107, 47);
+  text-shadow: -0.06em 0 0.5px rgba(255, 200, 100, 0.9);
+}
+
+.abar {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.zine-images {
+  margin-left: auto ;
+  margin-right: auto ;
+  display: flex;
+  align-items: center;
+  animation-duration: 3s;
+  max-width: 90%;
+}
+
+.zine-image {
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.zine-image img {
+  width: 100%;
+  box-shadow: 0.06rem 0.12rem 0 rgba(200, 100, 100, 0.5), 0 0.06rem 0 rgba(200, 100, 100, 0.5),
+    0 0 5px rgba(0, 0, 0, 0.4);
+  transition: ease-in-out 0.2s;
+}
+
+.zine-image img:hover {
+  filter: hue-rotate(45deg);
+  transform: translateY(-8pt);
+  box-shadow: 0.06rem 0.12rem 0 rgba(200, 100, 100, 0.5), 0 0.06rem 0 rgba(200, 100, 100, 0.5),
+    0 9pt 8px rgba(0, 0, 0, 0.28);
+}
+
+h1 {
+  text-align: center;
+  color: #bdcfb5;
+}
+
+.fade {
+  position: relative;
+  text-align: center;
+}
+
+.fade span {
+  position: absolute;
+  transform: translateX(-50%);
+  transition: ease-in-out .5s;
+}
+
+.fade span:nth-child(2) {
+  opacity: 0;
+}
+
+.fade span:nth-child(1) {
+  opacity: 1;
+}
+
+.fade:hover span:nth-child(2) {
+  opacity: 1;
+}
+
+.fade:hover span:nth-child(1) {
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; filter: blur(0.2px); }
+  to { opacity: 1; }
+}
+
+@media (max-aspect-ratio: 7/8) {
+  body {
+    background-image: url(./img/lines-alpha-10.png);
+    background-size: 6px;
+  }
+  .zine-images {
+    flex-direction: column;
+  }
+  .fade {
+      padding-bottom: 2em;
+  }
+}
