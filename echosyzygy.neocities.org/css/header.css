@@ -1,0 +1,29 @@
+/* Navigation container */
+
+
+/* Navigation links - using higher specificity and !important to override other CSS */
+.header-nav a {
+  background-color: black !important;
+  color: white !important; /* Removed duplicate color declaration */
+  font-family: 'Courier New', Courier, monospace !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  
+  /* Additional properties to ensure consistent styling */
+  /*display: inline-block !important;*/
+  padding: 4px 4px !important; /* Add some padding for better usability */
+  border: none !important;
+  margin: 0 !important;
+}
+
+/* Visited state */
+.header-nav a:visited {
+  color: white !important;
+  background-color: black !important;
+}
+
+/* Active state */
+.header-nav a:active {
+  color: white !important;
+  background-color: black !important;
+}
