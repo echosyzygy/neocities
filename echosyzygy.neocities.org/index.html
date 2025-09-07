@@ -9,22 +9,25 @@
         body {
             /* background with image overlay */
             background-color: black;       /* background */
-            background-image: url('./art/eszzy-h-img-816.jpg');
+            background: url('./img/busride-bw-silent-small.gif') no-repeat center center fixed;
+            background-size: cover;
+   
             
             /* Updated: Fit the entire image within the viewport */
-            background-size: contain;      /* Shows entire image, may leave empty space */
+            /* background-size: contain; */     /* Shows entire image, may leave empty space */
             background-position: center;   /* Centers the image */
             background-repeat: no-repeat; /* Prevents image from repeating */
             background-attachment: fixed; /* Image stays in place when scrolling */
             
             /* Add some styling to make text readable over the image */
-            color: white;
+            color: black;
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
             min-height: 100vh; /* Ensures body takes full viewport height */
             width: 100vw; /* Ensures body takes full viewport width */
             overflow-x: hidden; /* Prevent horizontal scrollbar */
+			text-shadow: 2px 2px 4px white;
         }
         
         /* Optional: Add a semi-transparent overlay for better text readability */
@@ -69,6 +72,7 @@
             <h1 data-text="echo.syzygy">echo.syzygy</h1>
              <body>
       <nav class="header-nav">
+	  
       <a href="./index.html">HOME</a>
       <a href="./books.html">BOOKS</a>
       <a href="./poetry.html">POETRY</a>
@@ -76,7 +80,8 @@
       <a href="https://soundcloud.com/echo-syzygy">MUSIC</a>
       <a href="./zines.html">ZINES</a>
       <a href="./about.html">ABOUT</a>
-      </nav>
+      
+	  </nav>
         </header>
     </div>
 </body>
