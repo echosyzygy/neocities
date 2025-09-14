@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Books</title>
-	<link href="./css/header.css" rel="stylesheet" type="text/css" media="all">
-	<link href="./css/books.css" rel="stylesheet" type="text/css" media="all">
-        <link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-      <nav class="header-nav">
-	      <center>
+<head>
+  <meta charset="UTF-8">
+  <title>Books</title>
+  <link href="./css/header.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./css/books.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./css/books-popup.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <nav class="header-nav">
+    <center>
       <a href="./index.html">HOME</a>
       <a href="./books.html">BOOKS</a>
       <a href="./poetry.html">POETRY</a>
@@ -17,84 +18,316 @@
       <a href="https://soundcloud.com/echo-syzygy">MUSIC</a>
       <a href="./zines.html">ZINES</a>
       <a href="./about.html">ABOUT</a>
-	      </center>
-      </nav>
-    <h1>All Titles</h1>
-    
-    <div class="arch-elem">
-      <div class="zine-image"><a href="https://www.amazon.com/Ragdoll-echo-syzygy/dp/B0CTGLKTWM/ref=sr_1_1?crid=Q1GHBBR4FQZP&dib=eyJ2IjoiMSJ9.NnSYrRZ7g2eBPXDz-khySg.V8ccUpfvqvnSfaZEHenJPuXUSEr72UsAyHL34KsVq5M&dib_tag=se&keywords=echo+syzygy+ragdoll&qid=1719725466&sprefix=echo+syzygy+ragdoll%2Caps%2C118&sr=8-1" target="_blank"><img alt="Ragdoll" src="./img/ragdoll-front-cvr-thumbnail.png"></a></div>
-      <p> Ragdoll (novel)<br>2024<a href="/txt-releases/lainzine-1.txt"></a></p>
-    </div>
-    
-    <div class="arch-elem">
-      <div class="zine-image"><a href="https://www.amazon.com/White-Linoleum-echo-syzygy/dp/B08KTYGYM8/ref=sr_1_5?dchild=1&keywords=echo+syzygy&qid=1626497775&sr=8-5" target="_blank"><img alt="White Linoleum" src="./img/white_linoleum_thumb.jpg"></a></div>
-      <p>White Linoleum (novel)<br>2020<a href="/txt-releases/lainzine-1.txt"></a></p>
-    </div>
-    
-    <div class="arch-elem">
-      <div class="zine-image"><a href="https://www.amazon.com/forks-under-water-echo-syzygy/dp/1983855529/ref=sr_1_1?s=books&ie=UTF8&qid=1536810717&sr=1-1&keywords=%222+forks+under+water%22" target="_blank"><img alt="2 forks under water" src="./img/2-forks-under-water-thumb.jpg"></a></div>
-      <p>2 forks under water (novel)<br>2017<a href="/txt-releases/lainzine-1.txt"></a></p>
-    </div>
-    
-    <div class="arch-elem">
-      <div class="zine-image"><a href="https://www.amazon.com/Spider-Angel-echo-syzygy-ebook/dp/B00GJCWZ56/ref=sr_1_1?ie=UTF8&qid=1536810825&sr=8-1&keywords=%22Spider+%26+the+Angel%22&dpID=51shs6j%252BbnL&preST=_SY445_QL70_&dpSrc=srch" target="_blank"><img alt="Spider & The Angel" src="./img/spider-and-the-angel-thumb.jpg"></a></div>
-      <p>Spider & The Angel (novel) <br>2013<a href="/txt-releases/lainzine-1.txt"></a></p>
-    </div>
-    
-    <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.amazon.com/Rathskellar-echo-syzygy/dp/1468092049/ref=sr_1_3?ie=UTF8&qid=1327036462&sr=8-3" target="_blank"><img alt="Rathskellar" src="./img/rathskellar-thumb.jpg"></a></div>
-      <p>Rathskellar (novel) <br>2011<a href="/txt-releases/lainzine-1.txt"></a></p>
-    </div>
-    
-    <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.lulu.com/shop/echo-syzygy/xylophone/paperback/product-12673616.html" target="_blank"><img alt="Xylophone" src="./img/xylophone_thumb.jpg"></a></div>
-      <p>xylophone (novel) <br>2010<a href="/txt-releases/lainzine-1.txt"></a></p>
-    </div>
+    </center>
+  </nav>
 
-    <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.lulu.com/shop/echo-syzygy/throat-goggle/paperback/product-5966302.html" target="_blank"><img alt="{Throat Goggle}" src="./img/throat_goggle_thumb.jpg"></a></div>
-      <p>{throat goggle} (novel)<br>2009<a href="/txt-releases/lainzine-1.txt"></a></p>
-    </div>
+  <h1>All Titles</h1>
 
-    <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.lulu.com/shop/echo-syzygy/pumpkin-stone/paperback/product-4107277.html" target="_blank"><img alt="pumpkin stone" src="./img/pumpkin_stone_thumb.jpg"></a></div>
-      <p>pumpkin stone (novella)<br>2008<a href="/txt-releases/lainzine-1.txt"></a></p>
+  <!-- Ragdoll Book -->
+  <div class="arch-elem" onclick="openModal('modal-ragdoll')">
+    <div class="zine-image">
+      <img alt="Ragdoll" src="./img/ragdoll-front-cvr-thumbnail.png">
     </div>
+    <p>Ragdoll (novel)<br>2024</p>
+  </div>
 
-     <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.lulu.com/shop/echo-syzygy/cardboard/paperback/product-2758024.html" target="_blank"><img alt="cardboard" src="./img/cardboard_thumb.jpg"></a></div>
-      <p>cardboard (novel)<br>2007<a href="/txt-releases/lainzine-1.txt"></a></p>
+  <!-- Ragdoll Modal -->
+  <div id="modal-ragdoll" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-ragdoll')">&times;</span>
+      <h3>Purchase<br>Ragdoll</h3>
+	  <img src="./img/ragdoll-front-cvr-thumbnail.png" style="width:75px; height:100px;"><br>
+      <a href="https://www.amazon.com/Ragdoll-echo-syzygy/dp/B0CTGLKTWM" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
     </div>
+  </div>
 
-     <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.lulu.com/shop/echo-syzygy/privatevoid/paperback/product-1999926.html" target="_blank"><img alt="privateVoid" src="./img/privatevoid_thumb.jpg"></a></div>
-      <p>privateVoid (novel) <br>2006<a href="/txt-releases/lainzine-1.txt"></a></p>
+  <!-- White Linoleum Book -->
+  <div class="arch-elem" onclick="openModal('modal-white')">
+    <div class="zine-image">
+      <img alt="White Linoleum" src="./img/white_linoleum_thumb.jpg">
     </div>
+    <p>White Linoleum (novel)<br>2020</p>
+  </div>
 
-    <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.lulu.com/shop/echo-syzygy/crickets-of-the-mask/paperback/product-208550.html" target="_blank"><img alt="Crickets of the Mask" src="./img/crickets_of_the_mask_thumb.jpg"></a></div>
-      <p>Crickets of the Mask (poetry)<br>2005<a href="/txt-releases/lainzine-1.txt"></a></p>
+  <!-- White Linoleum Modal -->
+  <div id="modal-white" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-white')">&times;</span>
+      <h3>Purchase<br>White Linoleum</h3>
+	  <img src="./img/white_linoleum_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="https://www.amazon.com/White-Linoleum-echo-syzygy/dp/B08KTYGYM8" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
     </div>
+  </div>
+  
+  <!-- 2 forks under water Book -->
+  <div class="arch-elem" onclick="openModal('modal-forks')">
+    <div class="zine-image">
+      <img alt="2 forks under water" src="./img/2-forks-under-water-thumb.jpg">
+    </div>
+    <p>2 forks under water (novel)<br>2017</p>
+  </div>
 
-    <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.amazon.com/Tin-Rust-Thing-Echo-Syzygy/dp/0595177247/ref=sr_1_1?ie=UTF8&s=books&qid=1210049269&sr=8-1" target="_blank"><img alt="Tin Can Rust Thing" src="./img/tin_can_rust_thing_thumb.jpg"></a></div>
-      <p>Tin Can Rust Thing (poetry) <br>2001<a href="/txt-releases/lainzine-1.txt"></a></p>
+  <!-- 2 forks under water Modal -->
+  <div id="modal-forks" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-forks')">&times;</span>
+      <h3>Purchase<br>2 forks under water</h3>
+	  <img src="./img/2-forks-under-water-thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="https://www.amazon.com/forks-under-water-echo-syzygy/dp/1983855529" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
     </div>
+  </div>
+  
+  <!-- Spider & The Angel Book -->
+  <div class="arch-elem" onclick="openModal('modal-spider')">
+    <div class="zine-image">
+      <img alt="Spider & The Angel" src="./img/spider-and-the-angel-thumb.jpg">
+    </div>
+    <p>Spider & The Angel (novel)<br>2013</p>
+  </div>
 
-     <div class="arch-elem">
-      <div class="zine-image"><a href="http://www.amazon.com/Away-Echo-Syzygy/dp/0595121330/ref=sr_1_2?ie=UTF8&s=books&qid=1210049327&sr=8-2" target="_blank"><img alt="Away..." src="./img/away_thumb.jpg"></a></div>
-      <p>Away... (poetry)<br>2000<a href="/txt-releases/lainzine-1.txt"></a></p>
+  <!-- Spider & The Angel Modal -->
+  <div id="modal-spider" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-spider')">&times;</span>
+      <h3>Purchase<br>Spider & The Angel</h3>
+	  <img src="./img/spider-and-the-angel-thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="https://www.amazon.com/Spider-Angel-echo-syzygy-ebook/dp/B00GJCWZ56" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
     </div>
-    
-    <div class="arch-elem">
-      <div class="zine-image"><a href="https://www.amazon.com/bellystone-echo-syzygy/dp/B0FNKS8H2W/ref=sr_1_1?crid=1LTHI55MOML6S&dib=eyJ2IjoiMSJ9.m0KJcoYTxWPAbrIuVGxJnA.rbgzTnrdePG09wjlZ3RsLfNIr7TKnbDoAzW8oKItRtY&dib_tag=se&keywords=Bellystone+by+echo+syzygy&qid=1757041910&sprefix=bellystone+by+echo+syzygy%2Caps%2C182&sr=8-1"target="_blank"><img alt="bellystone" src="./img/bellystone_thumb.jpg"></a></div>
-      <p>bellystone (poetry)<br>1999<a href="/txt-releases/lainzine-1.txt"></a></p>
+  </div>
+  
+  <!-- Rathskellar Book -->
+  <div class="arch-elem" onclick="openModal('modal-rath')">
+    <div class="zine-image">
+      <img alt="Rathskellar" src="./img/rathskellar-thumb.jpg">
     </div>
-    
-    <div class="arch-elem">
-      <div class="zine-image"><a href="https://www.amazon.com/Odd-Oso-Echo-Syzygy/dp/B0DWLR9GZB?crid=21ZOLU1R40YJT&dib=eyJ2IjoiMSJ9.yToSkIlThComzW0zfx-UH9hpKsxlN_DztxgYNveYCz-Mde2BRrJlcDuqtpA-Sl7QSPUF3vS-X3Hh0wKtMw8xdY-eEYIbwMC5KEP6CpLTLHkajhL0oprSUKTCO1LwyCD_ZYH_pgXWYAI5RlIJgryQOdshZbI1r6mSVtFOuUIK4YnWhdwPvC88luusiqU7J1_4x7GhLSsBhjilMOqM5CYijOlW4qPyX9zELWQRvWNZSGcq2emAojcIIQjfZF4qP1J1.Rfe-hbveU17EUHQhOD10GEetwE7s8JuTXySQ9utpo80&dib_tag=se&keywords=Odd+Oso+Oso&qid=1739597317&s=books&sprefix=odd+oso+oso%2Cstripbooks%2C131&sr=1-1" target="_blank"><img alt="Odd Oso Oso" src="./img/odd_oso_oso_thumb.png"></a></div>
-      <p>Odd Oso Oso (poetry) <br>1997<a href="/txt-releases/lainzine-1.txt"></a></p>
+    <p>Rathskellar (novel) <br>2011</p>
+  </div>
+
+  <!-- Rathskellar Modal -->
+  <div id="modal-rath" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-rath')">&times;</span>
+      <h3>Purchase<br>Rathskellar</h3>
+	  <img src="./img/rathskellar-thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.amazon.com/Rathskellar-echo-syzygy/dp/1468092049" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
     </div>
-    
-  </body>
+  </div>
+  
+  <!-- xylophone Book -->
+  <div class="arch-elem" onclick="openModal('modal-xylo')">
+    <div class="zine-image">
+      <img alt="xylophone" src="./img/xylophone_thumb.jpg">
+    </div>
+    <p>xylophone (novel)<br>2010</p>
+  </div>
+
+  <!-- xylophone Modal -->
+  <div id="modal-xylo" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-xylo')">&times;</span>
+      <h3>Purchase<br>xylophone</h3>
+	  <img src="./img/xylophone_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.lulu.com/shop/echo-syzygy/xylophone/paperback/product-12673616.html" target="_blank" class="modal-button">Lulu Books</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  <!-- throat goggle Book -->
+  <div class="arch-elem" onclick="openModal('modal-goggle')">
+    <div class="zine-image">
+      <img alt="throat goggle" src="./img/throat_goggle_thumb.jpg">
+    </div>
+    <p>{throat goggle} (novel)<br>2009</p>
+  </div>
+
+  <!-- throat goggle Modal -->
+  <div id="modal-goggle" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-goggle')">&times;</span>
+      <h3>Purchase<br>{throat goggle}</h3>
+	  <img src="./img/throat_goggle_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.lulu.com/shop/echo-syzygy/throat-goggle/paperback/product-5966302.html" target="_blank" class="modal-button">Lulu Books</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+
+  
+  <!-- pumpkin stone Book -->
+  <div class="arch-elem" onclick="openModal('modal-stone')">
+    <div class="zine-image">
+      <img alt="pumpkin stone" src="./img/pumpkin_stone_thumb.jpg">
+    </div>
+    <p>pumpkin stone (novella)<br>2008</p>
+  </div>
+
+  <!-- pumpkin stone Modal -->
+  <div id="modal-stone" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-stone')">&times;</span>
+      <h3>Purchase<br>pumpkin stone</h3>
+	   <img src="./img/pumpkin_stone_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.lulu.com/shop/echo-syzygy/pumpkin-stone/paperback/product-4107277.html" target="_blank" class="modal-button">Lulu Books</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  <!-- cardboard Book -->
+  <div class="arch-elem" onclick="openModal('modal-cardboard')">
+    <div class="zine-image">
+      <img alt="cardboard" src="./img/cardboard_thumb.jpg">
+    </div>
+    <p>cardboard (novel)<br>2007</p>
+  </div>
+
+  <!-- cardboard Modal -->
+  <div id="modal-cardboard" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-cardboard')">&times;</span>
+      <h3>Purchase<br>cardboard</h3>
+	  <img src="./img/cardboard_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.lulu.com/shop/echo-syzygy/cardboard/paperback/product-2758024.html" target="_blank" class="modal-button">Lulu Books</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  <!-- privateVoid Book -->
+  <div class="arch-elem" onclick="openModal('modal-privatevoid')">
+    <div class="zine-image">
+      <img alt="privateVoid" src="./img/privatevoid_thumb.jpg">
+    </div>
+    <p>privateVoid (novel)<br>2006</p>
+  </div>
+
+  <!-- privateVoid Modal -->
+  <div id="modal-privatevoid" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-privatevoid')">&times;</span>
+      <h3>Purchase<br>privateVoid</h3>
+	  <img src="./img/privatevoid_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.lulu.com/shop/echo-syzygy/privatevoid/paperback/product-1999926.html" target="_blank" class="modal-button">Lulu Books</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  <!-- Crickets of the Mask Book -->
+  <div class="arch-elem" onclick="openModal('modal-crickets')">
+    <div class="zine-image">
+      <img alt="Crickets of the Mask" src="./img/crickets_of_the_mask_thumb.jpg">
+    </div>
+    <p>Crickets of the Mask (poetry)<br>2005</p>
+  </div>
+
+  <!-- Crickets of the Mask Modal -->
+  <div id="modal-crickets" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-crickets')">&times;</span>
+      <h3>Purchase<br>Crickets of the Mask</h3>
+	  <img src="./img/crickets_of_the_mask_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.lulu.com/shop/echo-syzygy/crickets-of-the-mask/paperback/product-208550.html" target="_blank" class="modal-button">Lulu Books</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  <!-- Tin Can Rust Thing Book -->
+  <div class="arch-elem" onclick="openModal('modal-tin')">
+    <div class="zine-image">
+      <img alt="Tin Can Rust Thing" src="./img/tin_can_rust_thing_thumb.jpg">
+    </div>
+    <p>Tin Can Rust Thing (poetry) <br>2001</p>
+  </div>
+
+  <!-- Tin Can Rust Thing Modal -->
+  <div id="modal-tin" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-tin')">&times;</span>
+      <h3>Purchase<br>Tin Can Rust Thing</h3>
+	  <img src="./img/tin_can_rust_thing_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.amazon.com/Tin-Rust-Thing-Echo-Syzygy/dp/0595177247" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  <!-- Away Book -->
+  <div class="arch-elem" onclick="openModal('modal-away')">
+    <div class="zine-image">
+      <img alt="Away..." src="./img/away_thumb.jpg">
+    </div>
+    <p>Away... (poetry)<br>2000</p>
+  </div>
+
+  <!-- Away Modal -->
+  <div id="modal-away" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-away')">&times;</span>
+      <h3>Purchase<br>Away...</h3>
+	  <img src="./img/away_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="http://www.amazon.com/Away-Echo-Syzygy/dp/0595121330" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  <!-- bellystone Book -->
+  <div class="arch-elem" onclick="openModal('modal-bellystone')">
+    <div class="zine-image">
+      <img alt="bellystone" src="./img/bellystone_thumb.jpg">
+    </div>
+    <p>bellystone (poetry)<br>1999</p>
+  </div>
+
+  <!-- bellystone Modal -->
+  <div id="modal-bellystone" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-bellystone')">&times;</span>
+      <h3>Purchase<br>bellystone</h3>
+	   <img src="./img/bellystone_thumb.jpg" style="width:75px; height:100px;"><br>
+      <a href="https://www.amazon.com/bellystone-echo-syzygy/dp/B0FNKS8H2W" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  <!-- Odd Oso Oso Book -->
+  <div class="arch-elem" onclick="openModal('modal-odd')">
+    <div class="zine-image">
+      <img alt="Odd Oso Oso" src="./img/odd_oso_oso_thumb.png">
+    </div>
+    <p>Odd Oso Oso (poetry) <br>1997</p>
+  </div>
+
+  <!-- Odd Oso Oso Modal -->
+  <div id="modal-odd" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-odd')">&times;</span>
+      <h3>Purchase<br>Odd Oso Oso</h3>
+	  <img src="./img/odd_oso_oso_thumb.png" style="width:75px; height:100px;"><br>
+      <a href="https://www.amazon.com/Odd-Oso-Echo-Syzygy/dp/B0DWLR9GZB" target="_blank" class="modal-button">Amazon</a>
+      <!-- <a href="https://echosyzygy.gumroad.com/" target="_blank" class="modal-button">Gumroad</a> -->
+    </div>
+  </div>
+  
+  
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
 </html>
